@@ -8,11 +8,11 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 // setting up middle ware
 
-app.get('/'. (req, res) => {
+app.get('/', (req, res) => {
   res.redirect('/hello')
 })
 
-app.get('/'. (req, res) => {
+app.get('/', (req, res) => {
   res.send({express: 'Hello from express'})
 })
 
